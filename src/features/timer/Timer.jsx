@@ -261,7 +261,7 @@ function Timer() {
                   <div className="flex items-center justify-center sm:gap-4">
                      <img
                         className="w-1/3 opacity-75"
-                        src={'../../public/congratulation.png'}
+                        src={'../../congratulation.png'}
                         alt="Logo"
                      />
                      <h2 className="font-black text-neutral-700 italic sm:text-3xl">
