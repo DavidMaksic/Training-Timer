@@ -1,0 +1,29 @@
+@config "../tailwind.config.js";
+@import 'tailwindcss';
+
+html {
+   font-family: 'Nunito Sans', sans-serif;
+}
+
+@layer utilities {
+   .failed-save {
+      background-color: #fecaca;
+      color: #525252;
+      cursor: auto;
+   }
+
+   /* Chrome, Safari and Opera */
+   .no-scrollbar::-webkit-scrollbar {
+      display: none;
+   }
+
+   .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+   }
+}
+
+button,
+[role='button'] {
+   cursor: pointer;
+}
