@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import { calcTotalSeconds } from '../../utils/helpers';
 
@@ -26,6 +26,10 @@ function Timer() {
    const timerDispatch = useDispatch();
    const { skipSet } = useSkipSet();
 
+   // - Skips rest screen if current set is 1
+   const [noRest, setNoRest] = useState(false);
+   const [noRestCopy, setNoRestCopy] = useState(false);
+
    // - State data
    const { sets, work, rest, selectedWorkout, selectedWorkoutCopy } =
       useSelector((store) => store.workouts);
@@ -51,7 +55,14 @@ function Timer() {
    useDecreaseSet(restSeconds, id);
 
    // - This hook listens if the workout is finished
-   useWorkoutFinished(isPaused, sets, selectedWorkoutCopy, setIsPaused);
+   useWorkoutFinished(
+      isPaused,
+      sets,
+      selectedWorkoutCopy,
+      noRest,
+      noRestCopy,
+      setIsPaused
+   );
 
    // 1.) Show prepare screen
    useEffect(() => {
@@ -105,14 +116,19 @@ function Timer() {
             const totalSeconds = calcTotalSeconds(rest, type);
             startRestTimer(totalSeconds);
          }
+
+         if (sets === 1) setNoRest(true);
+         if (selectedWorkoutCopy.sets === 1) setNoRestCopy(true);
       }
    }, [
       workSeconds,
       isWorking,
       rest,
       id,
+      sets,
       finishedSet,
       selectedWorkout,
+      selectedWorkoutCopy,
       startRestTimer,
       timerDispatch,
    ]);

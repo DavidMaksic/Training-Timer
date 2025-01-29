@@ -3,8 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
    name: '',
    sets: 3,
-   work: 0.01,
-   rest: 0.05,
+   work: 1,
+   rest: 0.5,
    workouts: [],
    selectedWorkoutCopy: {},
 };
@@ -16,8 +16,8 @@ const workoutSlice = createSlice({
       resetState(state) {
          state.name = '';
          state.sets = 3;
-         state.work = 0.01;
-         state.rest = 0.05;
+         state.work = 1;
+         state.rest = 0.5;
       },
       setName(state, action) {
          state.name = action.payload;
