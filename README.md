@@ -4,7 +4,7 @@ Training Timer is a React-powered app that enables the user to create a workout 
 
 <br>
 
-You can check out the [live demo here](https://davidmaksic.vercel.app/timer).
+You can check out the [live demo here](https://davidmaksic.github.io/Training-Timer/).
 
 ![main image](https://davidmaksic.vercel.app/assets/timer-CbTBNgSy.png)
 
