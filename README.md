@@ -8,8 +8,7 @@ You can check out [the live demo here](https://davidmaksic.github.io/Training-Ti
 
 Installation:
 ```
-npm i
-npm run dev
+npm i && npm run dev
 ```
 
 ![main image](https://davidmaksic.vercel.app/timer.png)
