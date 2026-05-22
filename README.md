@@ -12,36 +12,40 @@ npm i
 npm run dev
 ```
 
-![main image](https://davidmaksic.vercel.app/assets/timer-CbTBNgSy.png)
+![main image](https://davidmaksic.vercel.app/timer.png)
+
+Training Timer is an app powered by **React** that enables the user to create a workout from the get-go, or to create a preset. It's built using **Redux Toolkit** for advanced state management.
+
+Site is styled with **Tailwind** and can be used on variety of devices thanks to the responsive design. Routing is done thanks to **React Router** library. Deployed on **Vercel**.
 
 <br>
 
 ## Quick workout
 Initial page (which can be seen above) offers some basic workout options: sets, work and rest. After user clicks the START button, workout timer screen will appear. Here user can skip the sets or pause his training.
 
-![quick workout](https://davidmaksic.vercel.app/assets/timer-1-BK0dugMh.png)
+![quick workout](https://davidmaksic.vercel.app/timer-1.png)
 
 <br>
 
 ## Creating a preset
 User has an option to create a preset quickly on the initial screen by pressing the SAVE button. They will see a modal which requires a name to be inputed. This workout will be created based on the initial screen data (sets, work and rest).
 
-![creating a preset](https://davidmaksic.vercel.app/assets/timer-2-BqFn86P5.png)
+![creating a preset](https://davidmaksic.vercel.app/timer-2.png)
 
 <br>
 
 After creating a preset as shown above, or after clicking PRESETS button on the main page, user will be navigated to the presets page where all of their custom workouts are displayed. Here they will also have an option to create a new workout.
 
-![presets](https://davidmaksic.vercel.app/assets/timer-3-D6FLZkbA.png)
+![presets](https://davidmaksic.vercel.app/timer-3.png)
 
 <br>
 
 If they choose to create a workout in the presets page, they will be shown a seperate page that requires all the necessary data.
 
-![saving a workout](https://davidmaksic.vercel.app/assets/timer-4-VgDN-nUv.png)
+![saving a workout](https://davidmaksic.vercel.app/timer-4.png)
 
 <br>
 
 After setting workout parameters, user can commence their workout.
 
-![saving a workout](https://davidmaksic.vercel.app/assets/timer-5-CWacBc-A.png)
+![saving a workout](https://davidmaksic.vercel.app/timer-5.png)
