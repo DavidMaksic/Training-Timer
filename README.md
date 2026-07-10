@@ -2,7 +2,7 @@
 
 Training Timer is a React-powered app that enables the user to create a workout from the get-go, or to create a preset. It's built using Redux Toolkit for advanced state management.
 
-You can check out [the live demo here](https://davidmaksic.github.io/Training-Timer/).
+You can check out [the live demo here](https://davidmaksic.github.io/training-timer/).
 
 <br>
 
